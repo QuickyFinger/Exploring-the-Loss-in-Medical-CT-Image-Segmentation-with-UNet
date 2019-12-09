@@ -1,2 +1,1 @@
-# Unet-for-CT-Segementation
-Build a CT Segementation Project
+# Explore the Hausdorff Loss in Medical CT Image Segmentation with UNet
