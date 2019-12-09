@@ -1,5 +1,7 @@
 # Exploring the Hausedorff Loss in Medical CT Image Segmentation with UNet
-Code for our medical CT image segmentation project.
+Code for our medical CT image segmentation project. Thanks for the following sharing: 
+1. [An end-to-end coarse-to-fine framework for organ segmentation: OrganSegRSTN](https://github.com/198808xc/OrganSegRSTN)
+2. [H-DenseUNet: Hybrid Densely Connected UNet for Liver and Tumor Segmentation from CT Volumes ](https://github.com/xmengli999/H-DenseUNet)
 
 ## Requirements
 None-exhaustive list:
@@ -12,7 +14,7 @@ None-exhaustive list:
 
 ## Usage
 ### Data Preprocessing
-Download dataset from [Liver Tumor Segmentation Challenge](https://wiki.cancerimagingarchive.net/display/Public/Pancreas-CT). Then unzip file in the command line: 
+Download dataset from [Pancreas-CT](https://wiki.cancerimagingarchive.net/display/Public/Pancreas-CT). Then unzip file in the command line: 
 ```
 unzip TCIA_pancreas_labels-02-05-2017.zip
 ```
@@ -58,7 +60,7 @@ For testing:
 ```
 python SurfaceOutput.py
 ```
-This will generate a output folder, which including the predict testing results.
+This will generate an output folder, which including the predict testing results.
 
 ## Versions
 The current version is 1.0. The current version is not well established, and the future version will come soon. 
