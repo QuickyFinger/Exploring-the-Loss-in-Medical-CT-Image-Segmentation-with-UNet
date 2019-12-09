@@ -44,7 +44,7 @@ Training is relatively slow and I think the distance map computation is time con
 ```
 python SurfaceTrain.py
 ```
-logs and models folders will be generated:
+Then, logs and models folders will be generated:
 
 | Folder/File                                   | Description                                          |
 |:----------------------------------------------|:-----------------------------------------------------|
@@ -61,7 +61,7 @@ python SurfaceOutput.py
 This will generate a output folder, which including the predict testing results.
 
 ## Versions
-The current version is 1.0. The current version is not well established, the future version will come soon. 
+The current version is 1.0. The current version is not well established, and the future version will come soon. 
 
 ## Concat Information
 If you encounter any problems in using these codes, please open an issue in this repository. You may also contact **Kang Yang** (yangkang323@gmail.com).
