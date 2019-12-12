@@ -174,8 +174,6 @@ def run(args):
     :param args:
     :return:
     '''
-    # slices, image filename and label filename
-    slice_path = os.path.join(args.data_path, 'slices')
 
     # initialize dataloader
     train_dataloader = DataLoader(CTDataset(current_fold=args.current_fold,
@@ -183,7 +181,7 @@ def run(args):
                                             high_range=args.high_range,
                                             organ_ID=args.organ_ID,
                                             slice_threshold=args.slice_threshold,
-                                            slice_path=slice_path,
+                                            slice_path=args.slice_path,
                                             train=True),
                                   batch_size=args.batch_size,
                                   shuffle=True,
@@ -194,7 +192,7 @@ def run(args):
                                           high_range=args.high_range,
                                           organ_ID=args.organ_ID,
                                           slice_threshold=args.slice_threshold,
-                                          slice_path=slice_path,
+                                          slice_path=args.slice_path,
                                           train=False),
                                 batch_size=args.batch_size,
                                 shuffle=False,
@@ -285,7 +283,7 @@ def get_args():
     parser.add_argument('--epochs', type=int, default=200, help='training epochs')
     parser.add_argument('--batch_size', type=int, default=2, help='number of samples in a batch')
     parser.add_argument('--num_workers', type=int, default=4)
-    parser.add_argument('--data_path', type=str, default='./data')
+    parser.add_argument('--slice_path', type=str, default='./slices')
     parser.add_argument('--slice_threshold', type=float, default=0.75)
     parser.add_argument('--model_path', type=str, default='./boundary-models')
     parser.add_argument('--current_fold', type=int, default=0, help='the current fold, [0, 3], default 0')
