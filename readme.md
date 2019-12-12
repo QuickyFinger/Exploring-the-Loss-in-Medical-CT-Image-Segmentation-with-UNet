@@ -3,7 +3,6 @@ Code for our medical CT image segmentation project. Thanks for the following sha
 1. [An end-to-end coarse-to-fine framework for organ segmentation: OrganSegRSTN](https://github.com/198808xc/OrganSegRSTN)
 2. [H-DenseUNet: Hybrid Densely Connected UNet for Liver and Tumor Segmentation from CT Volumes ](https://github.com/xmengli999/H-DenseUNet)
 3. [Boundary Loss for Highly Unbalanced Segmentation](https://github.com/LIVIAETS/surface-loss)
-4. [Boundary Loss for Remote Sensing Imagery Semantic Segmentation](https://github.com/yiskw713/boundary_loss_for_remote_sensing)
 ## Requirements
 None-exhaustive list:
 * python 2.7
