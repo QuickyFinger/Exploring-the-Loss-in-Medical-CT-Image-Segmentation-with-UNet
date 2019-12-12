@@ -83,7 +83,6 @@ class CTDataset(Dataset):
                 if self.image_ID[i] in self.image_set:
                     self.image_filename.append(image_filename_[i])
                     self.label_filename.append(label_filename_[i])
-                    break
         else:
             self.image_filename = []
             self.label_filename = []
@@ -91,7 +90,6 @@ class CTDataset(Dataset):
                 if self.image_ID[i] in self.image_set:
                     self.image_filename.append(image_filename_[i])
                     self.label_filename.append(label_filename_[i])
-                    break
 
     def __getitem__(self, index):
         '''
@@ -287,7 +285,7 @@ def get_args():
     parser.add_argument('--epochs', type=int, default=200, help='training epochs')
     parser.add_argument('--batch_size', type=int, default=2, help='number of samples in a batch')
     parser.add_argument('--num_workers', type=int, default=4)
-    parser.add_argument('--data_path', type=str, default='/home/redhand/DC_Comptition/CT-pancreas-segmentation/metric-loss/Hausdorff/data2npy')
+    parser.add_argument('--data_path', type=str, default='./data')
     parser.add_argument('--slice_threshold', type=float, default=0.75)
     parser.add_argument('--model_path', type=str, default='./boundary-models')
     parser.add_argument('--current_fold', type=int, default=0, help='the current fold, [0, 3], default 0')
