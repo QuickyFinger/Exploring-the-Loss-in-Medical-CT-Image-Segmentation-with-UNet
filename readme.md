@@ -1,4 +1,4 @@
-# Exploring the Hausedorff Loss in Medical CT Image Segmentation with UNet
+# Exploring the Loss Functions in Medical CT Image Segmentation with UNet
 Code for our medical CT image segmentation project. Thanks for the following sharing: 
 1. [An end-to-end coarse-to-fine framework for organ segmentation: OrganSegRSTN](https://github.com/198808xc/OrganSegRSTN)
 2. [H-DenseUNet: Hybrid Densely Connected UNet for Liver and Tumor Segmentation from CT Volumes ](https://github.com/xmengli999/H-DenseUNet)
