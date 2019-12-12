@@ -1,8 +1,9 @@
-# Exploring the Loss Functions in Medical CT Image Segmentation with UNet
+# Exploring the Loss in Medical CT Image Segmentation with UNet
 Code for our medical CT image segmentation project. Thanks for the following sharing: 
 1. [An end-to-end coarse-to-fine framework for organ segmentation: OrganSegRSTN](https://github.com/198808xc/OrganSegRSTN)
 2. [H-DenseUNet: Hybrid Densely Connected UNet for Liver and Tumor Segmentation from CT Volumes ](https://github.com/xmengli999/H-DenseUNet)
 3. [Boundary Loss for Highly Unbalanced Segmentation](https://github.com/LIVIAETS/surface-loss)
+4. [Boundary Loss for Remote Sensing Imagery Semantic Segmentation](https://github.com/yiskw713/boundary_loss_for_remote_sensing)
 ## Requirements
 None-exhaustive list:
 * python 2.7
@@ -44,7 +45,7 @@ image_slices, label_slices and slices folders will be generated:
 ### Training
 Training is relatively slow and I think the distance map computation is time consuming. For training:
 ```
-python SurfaceTrain.py
+python BoundaryTrain.py
 ```
 Then, logs and models folders will be generated:
 
@@ -58,7 +59,7 @@ Then, logs and models folders will be generated:
 ### Testing
 For testing:
 ```
-python SurfaceOutput.py
+python BoundaryOutput.py
 ```
 This will generate an output folder, which including the predict testing results.
 
